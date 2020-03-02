@@ -1,0 +1,176 @@
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "line": 3,
+        "name": "Login with valid usernae and password",
+        "description": "",
+        "id": "order-t-shirt-and-verify-in-order-history;login-with-valid-usernae-and-password",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 14099106409,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "user is already on Login Page",
+            "match": {
+              "location": "LoginStepDefinition.user_alredy_on_login_page()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 17777291,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "title of login page is Login - My Store",
+            "match": {
+              "location": "LoginStepDefinition.title_of_login_page()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 570178945,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "user enters username and password",
+            "match": {
+              "location": "LoginStepDefinition.enter_username_and_password()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 7314764296,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "user clicks on login button",
+            "match": {
+              "location": "LoginStepDefinition.click_on_login_button()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 34647052,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "title of home page is My account - My Store",
+            "match": {
+              "location": "LoginStepDefinition.title_of_home_page()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 131268,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "print massege user logged in successfully",
+            "match": {
+              "location": "LoginStepDefinition.print_message()"
+            },
+            "keyword": "Then "
+          }
+        ]
+      },
+      {
+        "line": 13,
+        "name": "Placing T-Shirt Order",
+        "description": "",
+        "id": "order-t-shirt-and-verify-in-order-history;placing-t-shirt-order",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 4839131431,
+              "status": "passed"
+            },
+            "line": 15,
+            "name": "user should be on T-shirt page",
+            "match": {
+              "location": "LoginStepDefinition.user_is_on_search_page()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 53881250,
+              "status": "passed"
+            },
+            "line": 16,
+            "name": "user should click on Add to cart",
+            "match": {
+              "location": "LoginStepDefinition.user_should_click_on_addtocart()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 5285342554,
+              "status": "passed"
+            },
+            "line": 17,
+            "name": "user should click on proced to checkout",
+            "match": {
+              "location": "LoginStepDefinition.user_should_click_on_proced_to_checkout()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 1967453227,
+              "status": "passed"
+            },
+            "line": 18,
+            "name": "user should click on proced to checkout on address tab",
+            "match": {
+              "location": "LoginStepDefinition.user_should_click_on_proced_to_checkout_on_address_tab()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 1991696656,
+              "status": "passed"
+            },
+            "line": 19,
+            "name": "user should click on proceed to checkout on Shipping tab",
+            "match": {
+              "location": "LoginStepDefinition.user_should_click_on_proced_to_checkout_on_Shipping_tab()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 4805347071,
+              "status": "passed"
+            },
+            "line": 20,
+            "name": "user should select pay by bank wire",
+            "match": {
+              "location": "LoginStepDefinition.user_should_select_pay_by_bank()"
+            },
+            "keyword": "Then "
+          }
+        ]
+      }
+    ],
+    "name": "Order T-Shirt and Verify in Order History",
+    "description": "",
+    "id": "order-t-shirt-and-verify-in-order-history",
+    "keyword": "Feature",
+    "uri": "C:/eclipse-workspace/maven_hari_1/Features/login.feature"
+  }
+]

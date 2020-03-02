@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?><testsuite failures="0" name="cucumber.runtime.formatter.JUnitFormatter" skipped="0" tests="2" time="40.979457">
+<testcase classname="Order T-Shirt and Verify in Order History" name="Login with valid usernae and password" time="22.036605">
+<system-out><![CDATA[Given user is already on Login Page.........................................passed
+When title of login page is Login - My Store................................passed
+Then user enters username and password......................................passed
+Then user clicks on login button............................................passed
+When title of home page is My account - My Store............................passed
+Then print massege user logged in successfully..............................passed
+]]></system-out>
+</testcase>
+<testcase classname="Order T-Shirt and Verify in Order History" name="Placing T-Shirt Order" time="18.942852">
+<system-out><![CDATA[Given user should be on T-shirt page........................................passed
+Then user should click on Add to cart.......................................passed
+Then user should click on proced to checkout................................passed
+Then user should click on proced to checkout on address tab.................passed
+Then user should click on proceed to checkout on Shipping tab...............passed
+Then user should select pay by bank wire....................................passed
+]]></system-out>
+</testcase>
+</testsuite>
