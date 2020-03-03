@@ -154,7 +154,33 @@ public class LoginStepDefinition {
 	public void print_message_order_found_in_history() {
 		System.out.println("message order found in history page");
 	}
+/////////////////////////////////////////////////////////////////////////////////
+	@Then ("^user should be on Personal info page$")
+	public void user_should_be_on_personal_info_page() {
+		driver.findElement(By.cssSelector("[title=\"Information\"]")).click();
+		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
+	}
+	@Then ("^clear value of first name field$")
+	public void clear_value_from_first_name_field() {
+		driver.findElement(By.id("firstname")).clear();
+	}
+	@Then ("^insert a value from random string$")
+	public void insert_a_value_from_random_string() {
+		String[] names = {"hariom","hari","hari.om"};
+		int idx = new Random().nextInt(names.length);
+		String randomName = (names[idx]);
+		driver.findElement(By.id("firstname")).sendKeys(randomName);
+        driver.findElement(By.id("old_passwd")).sendKeys("hariom");
+	}
+	@Then ("^click on save button$")
+	public void click_on_save_button() {
+		driver.findElement(By.cssSelector("[name=\"submitIdentity\"]")).click();
 	
+	}
+	@Then ("^print message personal information updated successfully$")
+	public void print_message_personal_info_updated() {
+		System.out.println("personal information updated successfully");
+	}
 }
 	
 
