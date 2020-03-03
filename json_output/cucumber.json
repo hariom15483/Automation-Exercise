@@ -12,7 +12,7 @@
         "steps": [
           {
             "result": {
-              "duration": 14099106409,
+              "duration": 22546579429,
               "status": "passed"
             },
             "line": 5,
@@ -24,7 +24,7 @@
           },
           {
             "result": {
-              "duration": 17777291,
+              "duration": 11847025,
               "status": "passed"
             },
             "line": 6,
@@ -36,7 +36,7 @@
           },
           {
             "result": {
-              "duration": 570178945,
+              "duration": 562128413,
               "status": "passed"
             },
             "line": 7,
@@ -48,7 +48,7 @@
           },
           {
             "result": {
-              "duration": 7314764296,
+              "duration": 8058931536,
               "status": "passed"
             },
             "line": 8,
@@ -60,7 +60,7 @@
           },
           {
             "result": {
-              "duration": 34647052,
+              "duration": 34469868,
               "status": "passed"
             },
             "line": 9,
@@ -72,7 +72,7 @@
           },
           {
             "result": {
-              "duration": 131268,
+              "duration": 103717,
               "status": "passed"
             },
             "line": 10,
@@ -85,7 +85,7 @@
         ]
       },
       {
-        "line": 13,
+        "line": 12,
         "name": "Placing T-Shirt Order",
         "description": "",
         "id": "order-t-shirt-and-verify-in-order-history;placing-t-shirt-order",
@@ -94,10 +94,10 @@
         "steps": [
           {
             "result": {
-              "duration": 4839131431,
+              "duration": 4719725019,
               "status": "passed"
             },
-            "line": 15,
+            "line": 14,
             "name": "user should be on T-shirt page",
             "match": {
               "location": "LoginStepDefinition.user_is_on_search_page()"
@@ -106,10 +106,10 @@
           },
           {
             "result": {
-              "duration": 53881250,
+              "duration": 312490074,
               "status": "passed"
             },
-            "line": 16,
+            "line": 15,
             "name": "user should click on Add to cart",
             "match": {
               "location": "LoginStepDefinition.user_should_click_on_addtocart()"
@@ -118,10 +118,10 @@
           },
           {
             "result": {
-              "duration": 5285342554,
+              "duration": 6678077574,
               "status": "passed"
             },
-            "line": 17,
+            "line": 16,
             "name": "user should click on proced to checkout",
             "match": {
               "location": "LoginStepDefinition.user_should_click_on_proced_to_checkout()"
@@ -130,10 +130,10 @@
           },
           {
             "result": {
-              "duration": 1967453227,
+              "duration": 3391362384,
               "status": "passed"
             },
-            "line": 18,
+            "line": 17,
             "name": "user should click on proced to checkout on address tab",
             "match": {
               "location": "LoginStepDefinition.user_should_click_on_proced_to_checkout_on_address_tab()"
@@ -142,10 +142,10 @@
           },
           {
             "result": {
-              "duration": 1991696656,
+              "duration": 2140869455,
               "status": "passed"
             },
-            "line": 19,
+            "line": 18,
             "name": "user should click on proceed to checkout on Shipping tab",
             "match": {
               "location": "LoginStepDefinition.user_should_click_on_proced_to_checkout_on_Shipping_tab()"
@@ -154,13 +154,95 @@
           },
           {
             "result": {
-              "duration": 4805347071,
+              "duration": 3988870894,
               "status": "passed"
             },
-            "line": 20,
+            "line": 19,
             "name": "user should select pay by bank wire",
             "match": {
               "location": "LoginStepDefinition.user_should_select_pay_by_bank()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 163139,
+              "status": "passed"
+            },
+            "line": 20,
+            "name": "print message order placed seccessfully",
+            "match": {
+              "location": "LoginStepDefinition.print_message_order_placed()"
+            },
+            "keyword": "Then "
+          }
+        ]
+      },
+      {
+        "line": 22,
+        "name": "Verify order in order history",
+        "description": "",
+        "id": "order-t-shirt-and-verify-in-order-history;verify-order-in-order-history",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 17635759,
+              "status": "passed"
+            },
+            "line": 23,
+            "name": "extract order ref id from placed order",
+            "match": {
+              "location": "LoginStepDefinition.extract_order_ref_id_from_order()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 3013405489,
+              "status": "passed"
+            },
+            "line": 24,
+            "name": "click on back to order button",
+            "match": {
+              "location": "LoginStepDefinition.click_on_back_to_order_button()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 26335066,
+              "status": "passed"
+            },
+            "line": 25,
+            "name": "extract first order item ref id from order history page",
+            "match": {
+              "location": "LoginStepDefinition.extract_first_item_order_id_from_order_history()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 50779,
+              "status": "passed"
+            },
+            "line": 26,
+            "name": "compare both ref id both ref id should be same",
+            "match": {
+              "location": "LoginStepDefinition.compare_both_id_should_be_same()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 102097,
+              "status": "passed"
+            },
+            "line": 27,
+            "name": "print message order found in history page",
+            "match": {
+              "location": "LoginStepDefinition.print_message_order_found_in_history()"
             },
             "keyword": "Then "
           }
